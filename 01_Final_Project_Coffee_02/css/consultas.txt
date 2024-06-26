@@ -1,0 +1,5 @@
+Header
+1. Logro distribuir uniformemente las etiquetas "a" respecto de su contenedor <nav> pero no del <header>.
+2. Que diferencia hay en colocar en href = "#about"  y href = "/templates/about.html"
+¿Para que sirva la flotación? Concretamente, en el caso del menu de navegacion colocarla a  <li> el atributo 
+float = "left", ¿Para que nos sirve? ¿Como podemos ver su efecto?

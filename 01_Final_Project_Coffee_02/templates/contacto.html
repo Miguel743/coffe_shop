@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Coffee Shop</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Mantener el header consistente -->
+        <div class="contenedor-navegacion">
+            <div class="contenedor-logo">
+                <img src="/assets/logo_coffee_shop.jpg" alt="logo" width="112" height="40" class="logo">
+            </div>
+            <div class="contenedor-menu">
+                <nav class="menu-navegacion">
+                    <ul>
+                        <li><a href="../index_coffe.html">INICIO</a></li>
+                        <li><a href="/templates/menu.html">MENÚ</a></li>
+                        <li><a href="/templates/producto1.html">CAFE EXPRESO</a></li>
+                        <li><a href="/templates/producto2.html">TE</a></li>
+                        <li><a href="/templates/producto3.html">JUEGOS DE FRUTAS</a></li>
+                        <li><a href="/templates/contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <form action="/submit-form" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- Contenido del footer -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-whatsapp"></i>+54 9 261-5922524
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i> info@coffe_shop.com
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i> Calle Copada 123, Ciudad
+            </div>
+        </div>
+        
+            <div class="footer-image">
+                <!--<img src="/assets/coffee_beans.jpg" alt="Granos de café">-->
+            </div>
+            
+            <div class="social-media">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

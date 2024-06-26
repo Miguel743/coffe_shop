@@ -1,0 +1,364 @@
+/* Restablecer algunos estilos predeterminados*/
+body, ul {
+    margin: 0;
+    padding: 0;
+} 
+body {
+    font-family: 'Courier New', Courier, monospace;
+    /*margin: 0 auto;*/
+}
+/* Estilo de encabezado básico */
+header {
+    background-color: rgb(225,225,225); /* Este mismo color en Hexadecimal es #333333;*/
+    /*padding: 10px 0;*/ /* Agrega espacio arriba y abajo del contenido del header */
+    display: flex;   
+    flex-direction: column; /*Cambia el eje principal a vertical, permitiendo que los elementos se apilen verticalmente. (logo y menu)*/
+    align-items: center;  /* Centra horizontalmente el contenido del header, ya que el cross axis ahora es el horizontal */
+    justify-content: center; 
+     
+}
+
+.contenedor-navegacion{
+
+    width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+    text-align: center;
+    
+    
+}
+
+.contenedor-logo{
+
+    margin-bottom: 10px; /* Espacio entre el logo y la barra de navegación */
+}
+
+.logo{
+    max-width: 100px; /* Ajusta según el tamaño deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Hace que la imagen se comporte como un elemento de bloque  lo cual es necesario para aplicar el centrado con margin (ya que estos actuan SOLO en elementos de BLOQUE */
+    margin: 0 auto; /*  aplica márgenes automáticos a los lados izquierdo y derecho de la imagen, centrando así la imagen horizontalmente dentro de su contenedor. */
+}
+
+.contenedor-menu{
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    margin: 0;
+
+
+}
+/* Estilo de nav */
+nav {
+    text-align: center;
+    width: 100%;  /* Asegura que ocupe el 90% del ancho disponible */
+    display: flex;
+    flex-wrap: wrap; /*Aseguramos que este contenedo respete el tamaño de sus hijos*/
+    justify-content: center;
+} /*Centramos los elementos de navegación osea las etiquetas <a> (ver consultas.txt) */
+/*
+La propiedad text-align se aplica al contenido en línea (en este caso las etiquetas <a>) dentro de un elemento de bloque 
+(en este caso tenemos <nav>, <ul> y <li>. 
+
+Aquí está el proceso y el efecto detallado:
+
+    1. Centrado de contenido en línea: "text-align: center" alinea horizontalmente todo el contenido en línea 
+    (como texto y elementos en línea como <a>) dentro del elemento bloqueante al cual se aplica (en este caso, <nav>).
+
+    2. Aplicación a la lista y los enlaces:
+
+        . Cuando aplicas text-align: center al <nav>, centras el contenido de los elementos <li> y los enlaces <a> dentro de ellos.
+        . Los elementos <li> por defecto son elementos de bloque, pero sus contenidos, que suelen ser enlaces <a>, son elementos en línea y se centran horizontalmente dentro del <li>.
+
+
+
+*/
+
+/* Eliminamos los puntos de la lista mendiante list-style */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usamos flexbox*/
+    justify-content: center;/* Centra los elementos flexibles horizontalmente */
+    background-color:rgb(255,122,4);
+    /*border-radius: 8px;*/
+    width: 100%;
+
+} /* Centramos los elementos */
+
+nav li {
+    margin: 0;
+}
+
+/* Estilo de los enlaces, con text-decoraction: none sacamos la linea inferior */
+nav a {
+    text-decoration: none;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block; /* Hacemos que toda el area sea clickeable*/
+} 
+
+/* Agregar efecto de desplazamiento */
+nav a:hover {
+    background-color: rgb(85, 85, 85);/* #555;*/
+} 
+
+.acerca{
+    /*background-image: url("../assets/close-up-pastry-leaves-near-bread.jpg");*/
+    /*background-image: url("../assets/leaves-around-pastry-coffee.jpg");*/
+    background-image: url("../assets/leaves-lying-around-coffee.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+}
+
+.acerca-menu-titulo{
+    /*background-image: url("../assets/close-up-pastry-leaves-near-bread.jpg");*/
+    /*background-image: url("../assets/leaves-around-pastry-coffee.jpg");*/
+    /*background-image: url("../assets/inicio_coffee_menu_04.jpg");*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+}
+
+.acerca-menu-categorias{
+    /*background-image: url("../assets/close-up-pastry-leaves-near-bread.jpg");*/
+    /*background-image: url("../assets/leaves-around-pastry-coffee.jpg");*/
+    background-image: url("../assets/categorias-menu.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+}
+/* Estilos especificos para la pagina de Menu*/
+
+.categoria{
+    background-color: rgb(225, 225, 225);
+
+
+}
+
+/* Estilos específicos para las páginas de productos */
+.producto-detalle {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(252, 154, 69);
+}
+
+.producto-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Estilos para la tarjeta del producto */
+.tarjeta-producto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+.producto-img {
+    width: 100%;
+    height: auto;
+}
+
+.producto-info {
+    padding: 20px;
+}
+
+.producto-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.producto-info p {
+    margin: 10px 0;
+}
+
+.producto-info .precio {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para enlaces */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del formulario de contacto */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 20px;
+    background-color: rgb(225, 225, 225);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: rgb(255, 122, 4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-item {
+    margin: 0 15px;
+}
+
+.contact-item i {
+    margin-right: 8px;
+}
+
+.coffee-beans img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ff7a04; /* Color de hover */
+}
+
+/* Breakpoints
+phone -> ancho hasta 467px
+tablet -> ancho hasta 768px
+laptop -> ancho hasta 1440px
+desktop -> ancho hasta 1680px
+*/
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .tarjeta-producto {
+        max-width: 100%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 467px) {
+    /*nav ul {
+        
+        flex-direction: column;
+        align-items: center;
+
+        } */
+
+    nav ul li {
+
+        margin: 10px 0;
+
+    }
+
+    nav a {
+        padding: 15px;
+        font-size: 0.90em;
+    }
+
+    nav a:hover {
+        background-color: rgb(85, 85, 85);/* #555;*/
+    }
+} 
+
+@media (max-width: 390px) {
+    
+    nav ul li {
+
+        margin: 10px 0;
+
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 0.75em;
+    }
+
+    nav a:hover {
+        background-color: rgb(85, 85, 85);/* #555;*/
+    }
+} 
+
+
+
+
